@@ -9,7 +9,7 @@ okt = Okt()
 
 df_stopwords = pd.read_csv('./stopwords.csv')
 stopwords = list(df_stopwords['stopword'])
-use_class = ['Noun','Verb','Adjective']
+
 cleaned_sentences = []
 for review in tqdm(df.review):
     review = re.sub('[^가-힣]',' ',review)
